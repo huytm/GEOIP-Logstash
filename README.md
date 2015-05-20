@@ -27,7 +27,7 @@ filter {
        match => { "message" => "%{SSHACC}" }
     }
     geoip {
-      source => "**src_ip**"
+      source => "src_ip"
       target => "geoip"
       database => "/etc/logstash/GeoLiteCity.dat"
       add_field => [ "[geoip][coordinates]", "%{[geoip][longitude]}" ]
