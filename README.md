@@ -47,7 +47,7 @@ filter {
 
 **Chú ý** trường **src_ip** phải lựa chọn đúng từ
 
-`SSHFAILED Failed %{WORD:auth_method} for %{USER:username} from %{IP:**src_ip**} port %{INT:src_port} ssh2
+`SSHFAILED Failed %{WORD:auth_method} for %{USER:username} from %{IP:src_ip} port %{INT:src_port} ssh2
 `
 
 
